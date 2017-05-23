@@ -958,6 +958,8 @@ static struct smb349_platform_data smb349_data __initdata = {
 	.en_n_gpio		= PM8921_GPIO_PM_TO_SYS(37),
 	.chg_susp_gpio		= PM8921_GPIO_PM_TO_SYS(30),
 	.chg_current_ma		= 2200,
+/*	.stat_gpio		= ?, */
+	.term_current_ma	= 100,
 };
 
 static struct i2c_board_info smb349_charger_i2c_info[] __initdata = {
